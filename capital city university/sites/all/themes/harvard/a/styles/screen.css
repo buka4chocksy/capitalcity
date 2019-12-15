@@ -17,7 +17,27 @@ body {
         width: 40px;
     }
 }
+@media only screen and (max-width: 768px){
+    header.header.top img {
+        max-width: 150px !important;
+        width: 80% !important;
+        margin-top: -10px !important;
+    }
+}
 
+@media only screen and (min-width: 768px){
+header.header.top img {
+    max-width: 300px !important;
+    margin-top: -30px !important;
+    width: 100% !important;
+}
+}
+
+header.header img :not(.top){
+    max-width: 180px !important;
+    width: 100% !important;
+    margin-top: -10px !important;
+}
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
     display: block
 }
